@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Restore",
+    "version": "1.0",
+
+    "description": "Restore youtube thumbnails.",
+
+    "icons": {
+        "48": "icons/border-48.png"
+    },
+
+    "content_scripts": [
+        {
+        "matches": ["*://*.messenger.com/t/*"],
+        "js": ["script.js"]
+        }
+    ]
+}
